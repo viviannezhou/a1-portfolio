@@ -213,3 +213,60 @@ a:hover {
     font-size: 2rem;
   }
 }
+
+/* page title area (projects, experience, contact) */
+.page-header {
+  padding: 4rem 0 1rem;
+}
+
+.page-header h1 {
+  font-size: 4rem;
+}
+
+.page-header p {
+  color: #7a6255;
+  font-size: 1.15rem;
+  max-width: 38em;
+}
+
+/* project cards */
+.project-card {
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #f6e1e1;
+  border-top: 6px solid #c9a0aa;
+  border-radius: 16px;
+  padding: 1.75rem;
+}
+
+.project-card h3 {
+  font-size: 1.6rem;
+}
+
+.project-where {
+  color: #7a6255;
+  font-size: 0.95rem;
+}
+
+/* little pill tags under each project */
+.tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.tags li {
+  background-color: #f6e1e1;
+  border-radius: 999px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 767.98px) {
+  .page-header h1 {
+    font-size: 2.8rem;
+  }
+}

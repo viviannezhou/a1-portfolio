@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+WRITTEN BY: Vivianne Zhou
+EMAIL: zhouvj@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Vivianne Zhou">
+  <meta name="description" content="Product, BI, and class projects by Vivianne">
+  
+  <!-- Google Fonts: Cormorant Garamond + Libre Caslon Condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;family=DM+Sans:wght@400;500&amp;display=swap">
+  
+  <!-- Bootstrap 5.3.3 for the grid, navbar, and buttons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ 
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- my stylesheet, loaded last so it overrides Bootstrap -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Projects |Vivianne Zhou</title>
+</head>
+<body>
+
+  <!-- navigation bar: collapses into a menu button on small screens -->
+  <header>
+    <nav class="navbar navbar-expand-md site-nav" aria-label="Main">
+      <div class="container">
+        <!-- your name on the left, links back to home -->
+        <a class="navbar-brand" href="index.html">Vivianne Zhou</a>
+
+        <!-- menu button that only shows on phones -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- page links, pushed to the right with ms-auto -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main page content goes here -->
+  <main id="main">
+        <!-- page title -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Projects</h1>
+        <p>A mix of internship work and class projects. Work projects are described at a high level since the details belong to the teams I worked with.</p>
+      </div>
+    </div>
+
+    <!-- internship projects: 2 across on tablets, 3 on desktop, 1 on phones -->
+    <section class="section pt-3" aria-labelledby="work-heading">
+      <div class="container">
+        <h2 id="work-heading">From internships</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col">
+            <article class="project-card">
+              <h3>Pacing dashboard rebuild</h3>
+              <p class="project-where">NBCUniversal, Summer 2026</p>
+              <p>Moved a sales pacing dashboard from a legacy reporting tool to a newer data platform. Compared it panel by panel, documented every metric's formula and source, and worked with developers on performance fixes.</p>
+              <ul class="tags">
+                <li>MicroStrategy</li>
+                <li>Gap analysis</li>
+                <li>Requirements</li>
+              </ul>
+            </article>
+          </div>
+
+            <div class="col">
+            <article class="project-card">
+              <h3>Reporting platform evaluation</h3>
+              <p class="project-where">NBCUniversal, Summer 2026</p>
+              <p>Led a feasibility evaluation of reporting platforms for the Sales Insights team. Interviewed BI users across groups, built a feature comparison, and presented a final recommendation to BI leadership at the end of the summer.</p>
+              <ul class="tags">
+                <li>Stakeholder interviews</li>
+                <li>Feature comparison</li>
+                <li>Presenting</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="project-card">
+              <h3>LA28 Olympics ad pitch</h3>
+              <p class="project-where">NBCUniversal intern program, team project</p>
+              <p>A 7-person team pitched a mock Olympic advertising partnership to On Running for LA28. I owned the AI differentiation section, showing how contextual targeting could deliver our creative concept at scale. We presented to about 100 people in the ad sales intern program, and a judge called out my contextual AI explanation.</p>
+              <ul class="tags">
+                <li>Pitching</li>
+                <li>Ad sales</li>
+                <li>Contextual AI</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="project-card">
+              <h3>Event Assistant user stories</h3>
+              <p class="project-where">LA Clippers, Spring 2026</p>
+              <p>Wrote 15+ Jira user stories for the Intuit Dome fan app from Figma designs and meeting notes, with acceptance criteria dev and QA could test against. Tested builds on iOS and Android before release.</p>
+              <ul class="tags">
+                <li>Jira</li>
+                <li>Figma</li>
+                <li>UAT</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="project-card">
+              <h3>Payments and fraud SOPs</h3>
+              <p class="project-where">LA Clippers, Spring 2026</p>
+              <p>Wrote 10+ SOPs for the fan and staff apps covering payments, fraud, and arena entrances, plus a hub page that Product and Finance use to find them.</p>
+              <ul class="tags">
+                <li>Confluence</li>
+                <li>Documentation</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="project-card">
+              <h3>Fan app competitive research</h3>
+              <p class="project-where">LA Clippers, Spring 2026</p>
+              <p>Reviewed 6 sports and venue apps and wrote UX feedback on every section of the Event Assistant flow, then drafted an A/B test plan for the home screen.</p>
+              <ul class="tags">
+                <li>UX research</li>
+                <li>A/B testing</li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- class projects -->
+    <section class="section section-pink" aria-labelledby="class-heading">
+      <div class="container">
+        <h2 id="class-heading">From class</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+          <div class="col">
+            <article class="project-card">
+              <h3>Tokenizer from scratch</h3>
+              <p class="project-where">Informatics 141</p>
+              <p>Wrote a Python tokenizer without outside libraries that counts word frequencies across large files and compares overlap between documents.</p>
+              <ul class="tags">
+                <li>Python</li>
+                <li>Information retrieval</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="col">
+            <article class="project-card">
+              <h3>This portfolio</h3>
+              <p class="project-where">Informatics 133</p>
+              <p>A four-page responsive site built with HTML, CSS, and Bootstrap, checked with W3C and accessibility validators.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+              </ul>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    
+  </main>
+
+  <!-- footer with contact links -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="mb-0">Designed and built by Vivianne Zhou, 2026</p>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/viviannezhou"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://github.com/viviannezhou"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a></li>
+        <li><a href="mailto:zhouvj@uci.edu"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS: makes the phone menu button open and close -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
