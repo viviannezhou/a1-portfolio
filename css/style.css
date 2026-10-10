@@ -1,0 +1,144 @@
+/* style.css for Vivianne Zhou's portfolio
+
+   palette:
+   cream       #fbf7f2  (page background)
+   baby pink   #f6e1e1  (soft sections)
+   mauve       #c9a0aa  (borders, accents)
+   deep mauve  #8b5a6b  (links, buttons)
+   brown       #4a3428  (main text)
+   light brown #7a6255  (secondary text)
+*/
+
+/* whole page */
+body {
+  background-color: #fbf7f2;
+  color: #4a3428;
+  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* headings */
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+  color: #4a3428;
+}
+
+/* links */
+a {
+  color: #8b5a6b;
+}
+
+a:hover {
+  color: #4a3428;
+}
+
+/* navbar */
+.site-nav {
+  border-bottom: 1px solid #c9a0aa;
+  padding: 1rem 0;
+}
+
+.site-nav .navbar-brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4a3428;
+}
+
+.site-nav .nav-link {
+  color: #7a6255;
+}
+
+.site-nav .nav-link:hover {
+  color: #4a3428;
+}
+
+/* current page gets a mauve underline */
+.site-nav .nav-link.active {
+  color: #4a3428;
+  border-bottom: 2px solid #8b5a6b;
+}
+
+/* intro section */
+.hero {
+  padding: 4rem 0 5rem;
+}
+
+.hero-title {
+  font-size: 5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.hero-lead {
+  font-size: 1.25rem;
+  max-width: 34em;
+}
+
+.hero-note {
+  color: #7a6255;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+/* buttons */
+.btn-mauve,
+.btn-pink {
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  border: none;
+}
+
+.btn-mauve {
+  background-color: #8b5a6b;
+  color: #ffffff;
+}
+
+.btn-mauve:hover {
+  background-color: #4a3428;
+  color: #ffffff;
+}
+
+.btn-pink {
+  background-color: #f6e1e1;
+  color: #4a3428;
+}
+
+.btn-pink:hover {
+  background-color: #c9a0aa;
+  color: #4a3428;
+}
+
+/* arch-shaped photo with a pink frame */
+.portrait {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 180px 180px 16px 16px;
+  border: 10px solid #f6e1e1;
+}
+
+/* phones: smaller title and photo */
+@media (max-width: 767.98px) {
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .portrait {
+    max-width: 220px;
+  }
+}
