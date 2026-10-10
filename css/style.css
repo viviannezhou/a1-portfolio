@@ -270,3 +270,72 @@ a:hover {
     font-size: 2.8rem;
   }
 }
+
+/* experience timeline */
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 2px solid #c9a0aa;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  column-gap: 2rem;
+  padding: 0 0 2.5rem 2rem;
+  position: relative;
+}
+
+/* mauve dot on the line for each role */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 0.4rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fbf7f2;
+  border: 3px solid #8b5a6b;
+}
+
+.timeline-date {
+  color: #7a6255;
+  font-weight: 500;
+}
+
+.timeline-org {
+  color: #7a6255;
+}
+
+/* skills table */
+.skills-table caption {
+  caption-side: top;
+  color: #7a6255;
+}
+
+.skills-table thead th {
+  background-color: #c9a0aa;
+  color: #4a3428;
+}
+
+/* education card */
+.side-card {
+  height: 100%;
+  background-color: #fbf7f2;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+/* phones: date goes above the role instead of beside it */
+@media (max-width: 767.98px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+    padding-left: 1.5rem;
+  }
+
+  .timeline-date {
+    margin-bottom: 0.25rem;
+  }
+}
