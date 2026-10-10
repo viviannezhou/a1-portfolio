@@ -339,3 +339,45 @@ a:hover {
     margin-bottom: 0.25rem;
   }
 }
+
+/* contact form */
+.contact-form .form-label {
+  font-weight: 500;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border-radius: 12px;
+  border-color: #c9a0aa;
+  padding: 0.7rem 1rem;
+  background-color: #ffffff;
+}
+
+/* mauve glow when you click into a box */
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: #8b5a6b;
+  box-shadow: 0 0 0 0.2rem #f6e1e1;
+}
+
+/* pink card on the right */
+.contact-card {
+  background-color: #f6e1e1;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-links li {
+  margin-bottom: 0.85rem;
+}
+
+.contact-links i {
+  width: 1.5rem;
+  color: #8b5a6b;
+}
