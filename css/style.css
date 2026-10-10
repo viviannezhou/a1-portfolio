@@ -142,3 +142,74 @@ a:hover {
     max-width: 220px;
   }
 }
+
+/* shared section spacing */
+.section {
+  padding: 4.5rem 0;
+}
+
+.section-pink {
+  background-color: #f6e1e1;
+}
+
+.section h2 {
+  font-size: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+/* focus boxes */
+.focus-box {
+  height: 100%;
+  background-color: #fbf7f2;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.focus-box i {
+  font-size: 1.6rem;
+  color: #8b5a6b;
+  margin-bottom: 1rem;
+}
+
+.focus-box h3 {
+  font-size: 1.7rem;
+}
+
+.focus-box p {
+  margin-bottom: 0;
+}
+
+/* footer */
+.site-footer {
+  border-top: 1px solid #c9a0aa;
+  padding: 2rem 0;
+  color: #7a6255;
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0;
+  margin: 0;
+}
+
+/* phones: less padding, smaller section titles */
+@media (max-width: 767.98px) {
+  .section {
+    padding: 3rem 0;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+  }
+}
