@@ -165,7 +165,7 @@ a:hover {
   padding: 2rem;
 }
 
-.focus-box i {
+.focus-box .fa-solid {
   font-size: 1.6rem;
   color: #8b5a6b;
   margin-bottom: 1rem;
@@ -377,7 +377,13 @@ a:hover {
   margin-bottom: 0.85rem;
 }
 
-.contact-links i {
+.contact-links .fa-solid,
+.contact-links .fa-brands {
   width: 1.5rem;
   color: #8b5a6b;
+}
+
+/* bold tool names in the first column */
+.skills-table td:first-child {
+  font-weight: 600;
 }
